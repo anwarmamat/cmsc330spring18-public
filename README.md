@@ -1,2 +1,2 @@
 # cmsc330fall17public
-cmsc330 Fall 2017 Public Repository
+cmsc330 Spring 2018 Public Repository
