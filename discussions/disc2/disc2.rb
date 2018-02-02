@@ -67,7 +67,7 @@ end
 
 # Takes a String str. See this format:
 #
-# name: Firstname Lastname id: 123456789
+# name: Firstname, Lastname id: 123456789
 # * where "Firstname" and "Lastname" can be any string which starts with an
 #   uppercase letter and has 0 or more lowercase letters afterwards.
 # * where "123456789" can be any string of exactly 9 digits.

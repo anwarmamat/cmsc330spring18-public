@@ -51,10 +51,10 @@ class PublicTests < Minitest::Test
     assert_equal(:error, extract_student_data("Name: Anwar Mamat, ID: 000000000"))
   end
 
- def scan_names
-    assert_equal([], "")
-    assert_equal(["Anwar", "Mike", "Niki", "Tom"], "AnwarMikeNikiTom")
-    assert_equal(["Anwar", "Mike"], "AnwarMike niki tom")
-    assert_equal(["Anwar", "Mike", "Ki", "M"], " Anwar$Mike niKi toM")
- end
+  def test_scan_names
+    assert_equal([], scan_names(""))
+    assert_equal(["Anwar", "Mike", "Niki", "Tom"], scan_names("AnwarMikeNikiTom"))
+    assert_equal(["Anwar", "Mike"], scan_names("AnwarMike niki tom"))
+    assert_equal(["Anwar", "Mike", "Ki", "M"], scan_names(" Anwar$Mike niKi toM"))
+  end
 end
