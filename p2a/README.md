@@ -3,6 +3,8 @@ CMSC 330, Spring 2018
 
 Due Monday, February 19th. (Late Tuesday, 20th)
 
+Public/Release/Secret tests breakdown: 40/30/30
+
 Ground Rules
 ------------
 **This is an individual assignment. You must work on this project alone.**
