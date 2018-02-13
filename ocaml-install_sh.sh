@@ -1,7 +1,6 @@
 #!/bin/bash -e
 # Install OCaml and OPAM inside a Cloud9 IDE workspace.
 # Run this script and then close and re-open the terminal
-
 # For the latest ocaml version go to:
 # http://caml.inria.fr/download.en.html and copy the Gzipped tarball link
 OCAML_URL=http://caml.inria.fr/pub/distrib/ocaml-4.06/ocaml-4.06.0.tar.gz
