@@ -243,8 +243,8 @@ eq (intersection (insert 5 (insert 2 [])) (insert 4 (insert 3 (insert 5 [])))) (
 ```
 eq (product [] []) [] = true
 eq (product (insert 2 []) []) [] = true
-eq (product (insert 2 []) (insert 2 [])) (insert (2,2) [])
-eq (insert (2,3) (insert (2,9) [])) (product (insert 2 []) (insert 3 (insert 9 [])))
+eq (product (insert 2 []) (insert 2 [])) (insert (2,2) []) = true
+eq (insert (2,3) (insert (2,9) [])) (product (insert 2 []) (insert 3 (insert 9 []))) = true 
 ``` 
  
 Project Submission
