@@ -76,7 +76,7 @@ count_over_x "bob" ["alive";"bat";"bob";"zebra"] = 2
 
 #### mean lst
 - **Type**: `float list -> float`
-- **Description**: Returns the mean of elements in `lst`. If the list is empty raise Invalid_argument with the string "empty".
+- **Description**: Returns the mean of elements in `lst`. If the list is empty raise Invalid_argument with the string "mean".
 - **Examples:**
 ```
 mean [] = Invalid_argument("mean")
