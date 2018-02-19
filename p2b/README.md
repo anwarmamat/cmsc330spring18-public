@@ -61,7 +61,7 @@ Some of these functions will require just map or fold, but some will require a c
 ```
 is_over_x 0 [1;3;1] = [true;true;true]
 is_over_x "z" [] = []
-is_over_x "bob" ["alive";"bat";"bob";"zebra"] = [true;true;false;false]
+is_over_x "bob" ["alive";"bat";"bob";"zebra"] = [false; false; false; true]
 ```
 
 #### count_over_x x lst
