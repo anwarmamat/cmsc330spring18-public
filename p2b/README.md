@@ -33,7 +33,7 @@ Project Files
 To begin this project, you will need to commit any uncommitted changes to your local branch and pull updates from the git repository. [Click here for directions on working with the Git repository.][git instructions] The following are the relevant files:
 
 -  OCaml Files
-  - **data.ml**: This is where you will write your code for parts 2-5 of the project.
+  - **data.ml**: This is where you will write your code for parts 2-4 of the project.
   - **data.mli**: This file is used to describe the signature of all the functions in the Data module. Don't worry about this file, but make sure it exists or your code will not compile. It also contains our type definitions.
   - **higher.ml**: This is where you will write your code for part 1 of the project.
   - **higher.mli**: This file is used to describe the signature of all the functions in the Higher module. Don't worry about this file, but make sure it exists or your code will not compile.
