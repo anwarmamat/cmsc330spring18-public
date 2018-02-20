@@ -71,7 +71,7 @@ is_over_x "bob" ["alive";"bat";"bob";"zebra"] = [false; false; false; true]
 ```
 count_over_x 0 [1;3;1] = 3
 count_over_x "z" [] = 0
-count_over_x "bob" ["alive";"bat";"bob";"zebra"] = 2
+count_over_x "bob" ["alive";"bat";"bob";"zebra"] = 1
 ```
 
 #### mean lst
