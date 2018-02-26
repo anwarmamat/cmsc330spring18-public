@@ -343,7 +343,7 @@ is_dst 2 { src = 1; dst = 2 } = true
 
 #### src_edges n g
 - **Type**: `node -> graph -> edge list`
-- **Description**: Returns a list of edges in graph `g` whose source node is `n`.
+- **Description**: Returns a list of edges in graph `g` whose source node is `n`. Edges in returned list should be in the order they appear in the edge list.
 - **Examples:**
 ```
 src_edges 1 (add_edges [{src=1;dst=2}; {src=1;dst=3}; {src=2;dst=2}] empty_graph) = [{src=1;dst=2}; {src=1;dst=3}]
