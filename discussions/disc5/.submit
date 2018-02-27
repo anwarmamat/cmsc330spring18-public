@@ -1,0 +1,11 @@
+# Submit server .submit file for
+#  Course cmsc330
+#  Project disc5: Discussion 5 Exercises
+
+courseName=cmsc330
+semester=201801
+projectNumber=disc5
+courseKey=2a8ed246262d965b
+authentication.type=ldap
+baseURL=https://submit.cs.umd.edu:443/spring2018
+submitURL=https://submit.cs.umd.edu:443/spring2018/eclipse/SubmitProjectViaEclipse
