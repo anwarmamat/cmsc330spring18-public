@@ -31,7 +31,7 @@ eval.cmi: eval.mli types.cmi
 testUtils.cmo testUtils.mli: eval.cmi utils.cmi testUtils.ml
 	ocamlfind $(CC) -o testUtils -linkpkg -package oUnit -c testUtils.ml
 
-utils.cmo utils.mli: types.cmi parser.cmi lexer.cmi utils.ml
+utils.cmo utils.cmi: types.cmi parser.cmi lexer.cmi utils.ml
 	$(CC) -o utils -c utils.ml
 
 types.cmo types.cmi: types.ml
