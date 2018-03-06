@@ -1,4 +1,4 @@
-# Project 3: SmallC Interpreter
+# Project 3b: SmallC Interpreter
 CMSC 330, Spring 2018
 Due March 13th at 11:59pm (Late: March 14th at 11:59pm)
 
@@ -7,6 +7,8 @@ P/R/S: 50/50/0
 Ground Rules and Extra Info
 ---------------------------
 This is **NOT** a pair project. You must work on this project alone as with most other CS projects. See the Academic Integrity section for more information.
+
+For this project, post questions using the `Project 3` folder on Piazza. 
 
 In your code, you may use **any** non-imperative standard library functions (with the exception of printing), but the ones that will be useful to you will be found in the [`Pervasives` module][pervasives doc] and the [`List` module][list doc]. Note that the `List` module has been disallowed in previous projects, but in the case of this project and projects going forward it will be allowed.
 
@@ -19,6 +21,8 @@ Up to this point your exposure to OCaml has been in an effort to familiarize you
 In this project, you will implement a small subset of an interpreter for SmallC, a small C-like language. The language supports variables, `int` and `bool` types, equality and comparison operations, math and boolean operations, control flow, and printing, all while maintaining static type-safety and being Turing complete!
 
 The language consists of expressions from the `expr` type and statements from the `stmt` type. These algebraic types can be used to represent the full space of properly formed SmallC programs. Their definitions are found in the `types.ml` file. This file should be a constant reference to the data types involved in successfully working with SmallC.
+
+This project is the second part of a project you will do later in the semester, in which you will write the parser for SmallC. In order to run SmallC code it first goes through a lexer, then a parser, and then this interpreter. The lexer and parser are both provided for this project, but later you will write a parser of your own! 
 
 Project Files
 -------------
@@ -186,3 +190,4 @@ Please **carefully read** the academic honesty section of the course syllabus. *
 [submit server]: submit.cs.umd.edu
 [web submit link]: image-resources/web_submit.jpg
 [web upload example]: image-resources/web_upload.jpg
+
