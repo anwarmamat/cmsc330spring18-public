@@ -121,7 +121,7 @@ This looks like:
 
 Utility Functions
 -----------------
-We have included correct implementations of the [set functions from P2A](../p2a#part-3-recursive-list-functions). You
+We have included correct implementations of the [set functions from P2A](../p2a#part-4-set-implementation-using-lists). You
 may use these in your solution. We have also provided a number of other potentially
 useful functions.
 
@@ -145,10 +145,10 @@ You must implement the following functions as specified.
 * **Description:** This function takes as input an NFA, a list of initial states, and a symbol option. The output will be a list of states (in any order, with no duplicates) that the NFA might be in after making one transition on the symbol (or epsilon if None), starting from one of the initial states given as an argument to move.
 * **Examples:**
 ```
-move m [0] Some 'a' = [1] (* m is the NFA defined above *)
-move m [1] Some 'a' = []
-move m [2] Some 'a' = []
-move m [0;1] Some 'a'  = [1]
+move m [0] (Some 'a') = [1] (* m is the NFA defined above *)
+move m [1] (Some 'a') = []
+move m [2] (Some 'a') = []
+move m [0;1] (Some 'a')  = [1]
 move m [1] None = [2]
 ```
 * **Explanation:**
