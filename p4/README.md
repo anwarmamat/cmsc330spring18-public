@@ -278,7 +278,6 @@ You can submit your project in two ways:
 
 * Submit your files directly to the [submit server][submit server] by clicking on the submit link in the column next to the project number. Then, use the submit dialog to submit all your files.
 Select your file using the "Browse" button, then press the "Submit project!" button. You do not need to put it in a zip file.
-![Upload your file][web upload example]
 * Submit directly by executing a the submission script on a computer with Java and network access. Included in this project are the submission scripts and related files listed under Project Files. These files should be in the directory containing your project. From there you can either execute `ruby submit.rb` or run the command `java -jar submit.jar` directly (this is all submit.rb does).
 No matter how you choose to submit your project, make sure that your submission is received by checking the [submit server][submit server] after submitting.
 
@@ -296,4 +295,3 @@ Please **carefully read** the academic honesty section of the course syllabus. *
 [wikipedia inorder traversal]: https://en.wikipedia.org/wiki/Tree_traversal#In-order
 [submit server]: submit.cs.umd.edu
 [web submit link]: image-resources/web_submit.jpg
-[web upload example]: image-resources/web_upload.jpg
