@@ -1,0 +1,5 @@
+#load "sets.cmo";;
+#load"str.cma";;
+#load "nfa.cmo";;
+#load "regexp.cmo";;
+
