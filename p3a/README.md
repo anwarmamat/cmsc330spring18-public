@@ -283,6 +283,6 @@ Please **carefully read** the academic honesty section of the course syllabus. *
 <!-- These should always be left alone or at most updated -->
 [pervasives doc]: https://caml.inria.fr/pub/docs/manual-ocaml/libref/Pervasives.html
 [git instructions]: ../git_cheatsheet.md
-[submit server]: submit.cs.umd.edu
+[submit server]: https://submit.cs.umd.edu
 [web submit link]: ../common-images/web_submit.jpg
 [web upload example]: ../common-images/web_upload.jpg
