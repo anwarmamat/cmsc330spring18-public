@@ -240,7 +240,7 @@ The last and shortest step is to have your parser handle the function entry poin
 
 The grammar for this parse is provided here:
 
-- Main ::= `int` `main` `(` `)` `{` Statement `}` `EOF`
+- Main ::= `int` `main` `(` `)` `{` Stmt `}` `EOF`
 
 For this slightly modified input to the example used in the previous two sections, the exact same output would be produced:
 
