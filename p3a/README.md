@@ -159,7 +159,7 @@ The (ambiguous) CFG of expressions, from which you should produce a value of `ex
 - UnaryExpr -> `!` UnaryExpr | PrimaryExpr
 - PrimaryExpr -> *`Tok_Int`* | *`Tok_Bool`* | *`Tok_ID`* | `(` Expr `)`
 
-The transformation of the above ambiguous grammar into a parsable, non-ambiguous, grammar can be found in the addendum. We encourage you to do the transformation yourself and utilize the addendum to check your work and ensure correctness before coding. 
+The transformation of the above ambiguous grammar into a parsable, non-ambiguous, grammar can be found in the [addendum][addendum]. We encourage you to do the transformation yourself and utilize the addendum to check your work and ensure correctness before coding. 
 
 As an example, see how the parser will break down an input mixing a few different operators with different precedence:
 
@@ -207,7 +207,7 @@ Again, we provide a grammar that is ambiguous and must be adjusted to be parsabl
     - ElseBranch -> `else` `{` Stmt `}` | ε
   - WhileStmt -> `while` `(` Expr `)` `{` Stmt `}`
 
-As with the Expression grammar, the transformation to enable the grammar to be parsable can be found in the addendum.
+As with the Expression grammar, the transformation to enable the grammar to be parsable can be found in the [addendum][addendum].
 
 If we expand on our previous example, we can see how the expression parser integrates directly into the statement parser:
 
@@ -286,3 +286,4 @@ Please **carefully read** the academic honesty section of the course syllabus. *
 [submit server]: https://submit.cs.umd.edu
 [web submit link]: ../common-images/web_submit.jpg
 [web upload example]: ../common-images/web_upload.jpg
+[addendum]: ambiguity.md
