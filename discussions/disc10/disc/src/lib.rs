@@ -1,18 +1,14 @@
 // Discussion 10 exercises, due 4/13/2018
 
 // HOW TO SUBMIT:
-// 1) Make a zip file which contains the "src" folder (the folder which
-//     contains lib.rs). Make sure it contains the "src" folder, NOT the
-//     contents of the "src" folder.
-// 2) Submit this zip file on the submit server's website.
+// Upload lib.rs (that's it) via web submission.
 
-// IF YOU ARE USING GRACE: You can download the lib.rs file on
-//     https://dav.terpconnect.umd.edu. You have to put that file into a
-//     "src" folder. Then, follow the instructions above.
+// IF YOU ARE USING GRACE: You can download lib.rs on
+// https://dav.terpconnect.umd.edu
 
-// You CANNOT use "ruby submit.rb" because I wasn't able to get it to
-//     work in time. Hopefully it will work for next week's discussion
-//     and the project.
+// YOU CANNOT USE "ruby submit.rb" because I wasn't able to get it to
+// work in time. Hopefully it will work for next week's discussion and
+// the project.
 
 // Returns the sum of the even integers in the range [i, j).
 // sum_evens(0, 6) -> 6 (0 + 2 + 4)
