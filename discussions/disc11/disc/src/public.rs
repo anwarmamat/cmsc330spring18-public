@@ -2,7 +2,9 @@ use super::*;
 
 #[test]
 fn public_test_substrings() {
-    assert_eq!(vec!["a", "ab", "abc", "b", "bc", "c"] , substrings("abc"));
+    let mut v = substrings("abc");
+    v.sort();
+    assert_eq!(vec!["a", "ab", "abc", "b", "bc", "c"] , v);
 }
 
 #[test]
