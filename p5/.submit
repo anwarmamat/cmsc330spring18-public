@@ -1,0 +1,11 @@
+# Submit server .submit file for
+#  Course cmsc330
+#  Project p5: Rust
+
+courseName=cmsc330
+semester=201801
+projectNumber=p5
+courseKey=2a8ed246262d965b
+authentication.type=ldap
+baseURL=https://submit.cs.umd.edu:443/spring2018
+submitURL=https://submit.cs.umd.edu:443/spring2018/eclipse/SubmitProjectViaEclipse
