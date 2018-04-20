@@ -60,8 +60,8 @@ impl Add for Vec2 {
 
     fn add(self, other: Vec2) -> Vec2 {
         Vec2 {
-            0,
-            0,
+            0.,
+            0.,
         }
     }
 }
