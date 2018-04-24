@@ -51,7 +51,6 @@ pub fn squared_cubed_sum(lst: Vec<i32>) -> i32 {
 
 use std::collections::HashMap;
 /// This function modifies two values from a hashmap associated with key1 and key2, and appends the string to_append to both values.
-/// Note: You may call .clone() on to_append in this function.
 pub fn append_values(hash: &mut HashMap<String, String>, key1: &str, key2: &str, to_append: &str) -> () {
       let s1 = hash.get_mut(key1).unwrap();
       let s2 = hash.get_mut(key2).unwrap();

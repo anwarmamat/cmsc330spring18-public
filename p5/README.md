@@ -65,7 +65,7 @@ Keep in mind that Rust Vectors, Slices and Arrays cannot be matched in the same 
 
 **bsearch**
 * **Type:** `fn bsearch<T: Eq + PartialOrd> (lst: &[T], ele: T) -> Option<usize>`
-* **Description:** A simple binary search of a slice.  Returns the index of the element if it is present, and None if it is not present
+* **Description:** A simple binary search of a slice.  Returns the index of the element if it is present, and None if it is not present.  You may not use the built in bsearch method of slices or vectors, it must be your own work!
 
 
 **get_high_scorers**
@@ -124,7 +124,7 @@ method anywhere, unless otherwise specified
 
 
 **rotate**
-* **Type:** `fn rotate(lst: &Vec<i32>) -> &Vec<i32>`
+* **Type:** `fn rotate(lst: &[i32]) -> &Vec<i32>`
 * **Description:** Takes all of the elements and creates a new vector that takes all the elements of the original and rotates them, so the first becomes the last, the second becomes first, and so on. Thus, [1,2,3,4] becomes [2,3,4,1]
 
 
@@ -138,7 +138,7 @@ method anywhere, unless otherwise specified
 * **Description:** Finds the sum of squares of all the elements, and the sum of all the cubes, and adds these values. You must call squared_sum and cubed_sum in squared_cubed_sum, and not do all the logic in squared_cubed_sum.
 
 **append_values**
-* **Type:** `fn append_values(hash: &mut HashMap<String, String>, key1: String, key2: String, to_append: String) -> ()`
+* **Type:** `fn append_values(hash: &mut HashMap<String, String>, key1: &str, key2: &str, to_append: &str) -> ()`
 * **Description:** This function modifies two values from a hashmap associated with key1 and key2, and appends the string to_append to them.  You are guaranteed the keys exist in the hashmap.
 
 
