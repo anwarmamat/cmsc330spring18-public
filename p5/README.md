@@ -68,7 +68,7 @@ Keep in mind that Rust Vectors, Slices and Arrays cannot be matched in the same 
 * **Description:** A simple binary search of a slice.  Returns the index of the element if it is present, and None if it is not present.  You may not use the built in bsearch method of slices or vectors, it must be your own work!
 
 
-**get_high_scorers**
+**get_course_data**
 * **Type:** `fn get_high_scorers(csv_data: &str) -> (HashMap<&str,usize>,HashMap<&str,usize>,HashMap<&str,usize>) `
 * **Description:** We have a CSV of course information.  The CSV has many lines that are formatted as "<Deptartment>,<CourseNumber>,<RoomNumber>,<DaysOfWeek>".  A str containing all of the CSV file, Calculate the number of courses being offered in each department, in each room, and at each time.  Write the function get_course_data that does these calculations, and stores the results in three hashes that map departments, rooms, and times to number of occurrences.  Return these hashes in a tuple.
 
