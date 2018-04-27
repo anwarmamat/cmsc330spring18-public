@@ -4,7 +4,7 @@ use std::mem::swap;
 use std::rc::Rc;
 
 // Given a list of list of integers, return the sum. Use map and fold.
-// sum_squares(&[1, 2] -> 5 (1^2 + 2^2)
+// sum_arr_arr(&[&[1, 2], &[3]] -> 6
 pub fn sum_arr_arr(arr: &[&[i32]]) -> i32 {
     // IMPLEMENT
     0
