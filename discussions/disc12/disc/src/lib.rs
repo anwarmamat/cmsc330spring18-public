@@ -3,7 +3,7 @@
 use std::mem::swap;
 use std::rc::Rc;
 
-// Returns the sum of the squared elements of arr. Use map and fold.
+// Given a list of list of integers, return the sum. Use map and fold.
 // sum_squares(&[1, 2] -> 5 (1^2 + 2^2)
 pub fn sum_arr_arr(arr: &[&[i32]]) -> i32 {
     // IMPLEMENT
