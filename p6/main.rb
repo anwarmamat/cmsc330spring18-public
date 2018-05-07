@@ -113,8 +113,8 @@ end
 post "/register" do
 	succ = CTRL.register(
 		params["user"],
-		params["avatar"]["filename"],
-		params["avatar"]["tempfile"],
+		params["avatar"][:filename],
+		params["avatar"][:tempfile],
 		params["password"],
 		params["confirm"])
 
