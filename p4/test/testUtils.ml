@@ -1,4 +1,5 @@
-open Nfa
+open Regexpi.Nfa
+open Regexpi.Regexp
 open OUnit2
 
 let assert_true x = assert_equal true x;;
@@ -17,23 +18,23 @@ let assert_dfa m =
 
 (* Helpers for clearly testing the accept function *)
 let assert_nfa_accept nfa input =
-  if not @@ Nfa.accept nfa input then
+  if not @@ accept nfa input then
     assert_failure @@ Printf.sprintf "NFA should have accept string '%s', but did not" input
 
 let assert_nfa_deny nfa input =
-  if Nfa.accept nfa input then
+  if accept nfa input then
     assert_failure @@ Printf.sprintf "NFA should not have accepted string '%s', but did" input
 
 let assert_nfa_closure nfa ss es =
   let es = List.sort compare es in
-  let rcv = List.sort compare @@ Nfa.e_closure nfa ss in
+  let rcv = List.sort compare @@ e_closure nfa ss in
   if not (es = rcv) then
     assert_failure @@ Printf.sprintf "Closure failure: Expected %s, received %s" (string_of_int_list es) (string_of_int_list rcv)
 
 let assert_nfa_move nfa ss mc es =
   let es = List.sort compare es in
-  let rcv = List.sort compare @@ Nfa.move nfa ss mc in
+  let rcv = List.sort compare @@ move nfa ss mc in
   if not (es = rcv) then
     assert_failure @@ Printf.sprintf "Move failure: Expected %s, received %s" (string_of_int_list es) (string_of_int_list rcv)
 
-let assert_regex_string_equiv rxp = assert_equal rxp @@ Regexp.string_to_regexp @@ Regexp.regexp_to_string rxp
+let assert_regex_string_equiv rxp = assert_equal rxp @@ string_to_regexp @@ regexp_to_string rxp

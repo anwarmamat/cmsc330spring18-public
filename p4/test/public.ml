@@ -1,6 +1,6 @@
 open OUnit2
-open Nfa
-open Regexp
+open Regexpi.Nfa
+open Regexpi.Regexp
 open TestUtils
 
 let test_nfa_accept ctxt =

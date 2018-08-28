@@ -34,6 +34,6 @@ let move m qs s = failwith "unimplemented"
 
 let e_closure m qs = failwith "unimplemented"
 
-let accept m str = failwith "unimplemented"
+let accept m str = if elem "x" [ "y" ] then true else false
 
 let nfa_to_dfa m = failwith "unimplemented"

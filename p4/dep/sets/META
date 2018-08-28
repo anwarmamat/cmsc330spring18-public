@@ -1,0 +1,5 @@
+description = ""
+version = "1.0.0"
+
+archive(byte) = "sets.cma"
+archive(native) = "sets.cmxa"

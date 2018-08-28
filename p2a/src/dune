@@ -1,2 +1,3 @@
 (library
-  (name basics))
+  (name basics)
+  (public_name basics))
