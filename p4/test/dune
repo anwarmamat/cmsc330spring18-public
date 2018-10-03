@@ -1,0 +1,7 @@
+(test
+  (name public)
+  (libraries regexpi ounit))
+
+(alias
+  (name runtest)
+  (action (run ./public.bc)))
